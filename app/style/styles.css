@@ -8,6 +8,11 @@
 	text-align: center;
 	background: #c0c0c0;
 	color: white;
+	padding-top: 20%;
+	position: relative;
+ 	top: 50%;
+ 	
+
 }
 .center-block {
 	max-height: 300px;
