@@ -1,0 +1,57 @@
+<!-- HOME PAGE SEARCH - INPUT BOX HTML -->
+
+
+	<div class="row">
+		<div class="col-lg-12">
+    		<div class="input-group">
+      			<input type="text" class="form-control" ng-model="vm.input" placeholder="input name of movie here... ">
+		      <span class="input-group-btn">
+		      	<button class="btn btn-secondary" type="button" ng-click="vm.showMovies(vm.input)" ui-sref="state1">Go!</button>
+		      </span>
+    		</div>
+  		</div>
+	</div>
+
+
+<!-- STATE 1 -->
+
+<!-- //////////////////// -->
+
+	<h3 ng-show="vm.resultLabel">Search Results</h3>
+	
+	<!-- <a ui-sref="state1({title:'movies'})"></a> -->
+	
+
+	<div ui-view></div>
+	<div class="col-sm-4"  ng-repeat="movies in vm.movies">
+		<div class="panel panel-info">
+			<div class="panel-heading">{{movies.Title}}</div>
+		
+			
+			<div class="panel-body">
+				<img ng-if="movies.Poster" ng-src="{{movies.Poster}}" alt="" class="center-block" id="search-poster">
+			</div>
+
+			<div class="bottom-align-text col-sm-6">
+	        	<h4>{{movies.Year}}</h4>
+	    	</div>
+
+	    	<a ui-sref="state2({detailID: movies.imdbID})" class="btn btn-info">More Details</a>
+
+		</div>
+
+		
+
+	</div>
+
+	
+
+
+
+
+
+
+ <!-- //////////////////  -->
+	
+
+	

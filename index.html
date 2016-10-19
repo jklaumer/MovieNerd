@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MovieNerd Laumer</title>
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<!-- endbower -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="/app/style/styles.css">
+<!-- endinject -->
+</head>
+
+<body>
+        <div class="headline">  
+            <h1>The Super Awesome Movie Nerd Application</h1>
+        </div>  
+
+<!-- CHANGING STATES BELOW -->
+
+        <div class="container">
+            <topnav brand="MovieNerd"></topnav> 
+            <p ui-view></p>
+        </div> 
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- endbower -->
+<!-- inject:js -->
+<script src="/app/app.js"></script>
+<script src="/app/movie/movie.controller.js"></script>
+<script src="/app/movie/movie.detail.controller.js"></script>
+<script src="/app/movie/movie.service.js"></script>
+<!-- endinject -->
+</body>
+</html>
