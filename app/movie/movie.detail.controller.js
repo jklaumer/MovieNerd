@@ -5,34 +5,29 @@
         .module('app')
         .controller('movieDetailController', movieDetailController);
 
-    movieDetailController.$inject = [ '$http','$stateParams','movieService'];
+    movieDetailController.$inject = ['$stateParams','movieService'];
 
     /* @ngInject */
-    function movieDetailController($http, $stateParams, movieService) {
+    function movieDetailController($stateParams, movieService) {
         var vm = this;
         vm.title = 'movieDetailController';
-        vm.MovieDetails = [];
-        
+        vm.MovieDetails = [];    
 
         activate();
-
         function activate (){
             if($stateParams.detailID){
              movieService.getMovieDetails($stateParams.detailID).then(
                 function(response) {
-
                     vm.movies = response;
-                    // console.log(vm.movies);
-                
-
-                },function(error){
+                    // console.log(vm.movies);               
+                    },function(error){
                     console.log(error);
                 })
-
-
+            }
         }
-
-}
-
     }
 })();
+
+// JK: some comments would be nice here as well
+// BL: add comments
+// SA: comments pls

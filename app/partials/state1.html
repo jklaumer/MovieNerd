@@ -18,15 +18,11 @@
 <!-- //////////////////// -->
 
 	<h3 ng-show="vm.resultLabel">Search Results</h3>
-	
-	<!-- <a ui-sref="state1({title:'movies'})"></a> -->
-	
 
 	<div ui-view></div>
 	<div class="col-sm-4"  ng-repeat="movies in vm.movies">
 		<div class="panel panel-info">
-			<div class="panel-heading">{{movies.Title}}</div>
-		
+			<div class="panel-heading">{{movies.Title}}</div>		
 			
 			<div class="panel-body">
 				<img ng-if="movies.Poster" ng-src="{{movies.Poster}}" alt="" class="center-block" id="search-poster">
@@ -40,18 +36,11 @@
 
 		</div>
 
-		
-
 	</div>
 
-
-
-
-
-
-
-
  <!-- //////////////////  -->
-	
+<!--JK: Nice formatting -->
+<!--BL: Nice & clean-->
+<!--SA: great layout -->
 
 	

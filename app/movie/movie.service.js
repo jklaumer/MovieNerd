@@ -93,3 +93,7 @@
 
     }
 })();
+
+// JK: Nice job getting the api working
+// BL: 
+// SA: nice comment use to keep track of process
