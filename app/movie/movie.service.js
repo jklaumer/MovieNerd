@@ -7,15 +7,15 @@
 
     movieService.$inject = ['$http', '$q'];
 
-    /* @ngInject */
-    function movieService($http, $q) {
+        /* @ngInject */
+        function movieService($http, $q) {
 
-        var service = {
-            getMovie: getMovie, 
-            getMovieDetails: getMovieDetails
-        };
+            var service = {
+                getMovie: getMovie, 
+                getMovieDetails: getMovieDetails
+            };
 
-        return service;
+            return service;
 
         ////////////////
 

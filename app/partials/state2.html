@@ -1,16 +1,18 @@
 	
 
-	<div class="col-sm-6">
+	<div class="col-sm-9">
 		<label for="">Plot</label>
 		<p class="well">{{vm.movies.Plot}}</p>
 	</div>
 
 
 
-	<div class="col-sm-12">  
+	<div class="col-sm-9">  
 		<div class="panel panel-info">
-			<div class="panel-heading">{{vm.movies.Title}}</div>
+			<div class="panel-heading">{{vm.movies.Title}}  {{vm.movies.Rated}}</div>
 			<div class="panel-body">
+			<p>{{vm.movies.Runtime}}</p>
+			<p>IMDB Rating: {{vm.movies.imdbRating}}</p>
 			<p>Released: {{vm.movies.Released}}</p>
 			<p>Director(s): {{vm.movies.Director}}</p>
 			<p>Writen by: {{vm.movies.Writer}}</p>	
@@ -21,6 +23,6 @@
 		</div>
 
 		<!-- <button class="btn btn-primary" type="button" ng-click="vm.showMovies(vm.input)" ui-sref="state1">BACK</button> -->
-		<button onclick="history.back()">Back</button>
+		<button onclick="history.back()">Back to search</button>
 
 	</div>		
