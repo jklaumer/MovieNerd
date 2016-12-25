@@ -13,8 +13,8 @@
         vm.title = 'movieController';
         vm.movies = [];
         vm.resultLabel = false;
+        vm.searchResults = '';
         
-
         activate();
 
         /////////////
@@ -30,22 +30,17 @@
                     console.log(response);
 
                     vm.movies = response;
+                    vm.searchResults = response.length;
                     
-                    console.log(vm.movies);
-                })
-
-
-            // TOASTR ERROR CODE GOES HERE
-            //     .catch(function() {
-            //     vm.error = 'There has been an error!';
-            // });
+                    console.log(response.length);
+            })           
         }
-
     }
+
 })();
 
 // JK: add some comments for this controller
 // BL: More comments 
-// SA: show your work 
+
 
 

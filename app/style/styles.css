@@ -1,3 +1,8 @@
+.title {
+	text-align: center;
+	margin: auto;
+}
+
 .leftpad {
 	margin-left: 50px;
 	margin-right: 50px;
@@ -30,4 +35,30 @@
 .detailInfoBox {
 	padding: 10%;
 }
+
+#getDetailButton {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

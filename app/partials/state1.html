@@ -2,7 +2,7 @@
 
 
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-8 col-lg-offset-2">
     		<div class="input-group">
       			<input type="text" class="form-control" ng-model="vm.input" placeholder="input name of movie here... ">
 		      <span class="input-group-btn">
@@ -17,7 +17,8 @@
 
 <!-- //////////////////// -->
 
-	<h3 ng-show="vm.resultLabel">Search Results</h3>
+	<h3 ng-show="vm.resultLabel">Search Results: </h3>
+	<h6 ng-model="vm.searchResults" ng-show="vm.resultLabel">{{searchResults}} 10 results found</h6>
 
 	<div ui-view></div>
 	<div class="col-sm-4"  ng-repeat="movies in vm.movies">
@@ -28,11 +29,11 @@
 				<img ng-if="movies.Poster" ng-src="{{movies.Poster}}" alt="" class="center-block" id="search-poster">
 			</div>
 
-			<div class="bottom-align-text col-sm-4">
+			<div class="bottom-align-text col-sm-offset-5">
 	        	<h4>{{movies.Year}}</h4>
 	    	</div>
 
-	    	<a ui-sref="state2({detailID: movies.imdbID})" class="btn btn-info">See Movie Details</a>
+	    	<a id="getDetailButton" ui-sref="state2({detailID: movies.imdbID})" class="btn btn-success col-sm-offset-3">See Movie Details</a>
 
 		</div>
 

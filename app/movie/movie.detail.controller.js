@@ -28,6 +28,4 @@
     }
 })();
 
-// JK: some comments would be nice here as well
-// BL: add comments
-// SA: comments pls
+
